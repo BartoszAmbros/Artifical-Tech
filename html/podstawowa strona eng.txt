@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bartosz Ambros">
+    <title>Artifical Tech</title>
+    <link rel="stylesheet" href="/Zaliczenie/scss/glowna.css">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="menu">
+            <nav>
+                <a href="landing.html">Home</a>
+                <a href="news.html">News</a>
+                <a href="about.html">About us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="jezyk">
+                <a href="landing.html"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/320px-Flag_of_the_United_States.svg.png"
+                        alt="American flag"></a>
+                <a href="glowna.html"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/320px-Flag_of_Poland.svg.png"
+                        alt="Polish flag"></a>
+            </div>
+        </div>
+        <input type="checkbox" id="hamburger-input" class="burger-shower">
+
+        <label class="hamburger-menu" for="hamburger-input">
+            <nav class="sidebar-menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="landing.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="jezyk">
+                    <a href="landing.html"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/320px-Flag_of_the_United_States.svg.png"
+                            alt="American flag"></a>
+                    <a href="glowna.html"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/320px-Flag_of_Poland.svg.png"
+                            alt="Polish flag"></a>
+            </nav>
+        </label>
+
+        <div class="overlay"></div>
+
+    </header>
+
+    <section class="baner"></section>
+
+
+
+
+
+
+
+    <footer>
+        <div class="socials">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img
+                    src="/Zaliczenie/youtube.png" alt="Youtube"></a>
+            <a href="http://twitter.com/home" target="_blank" rel="noopener noreferrer"><img
+                    src="/Zaliczenie/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
+                    src="/Zaliczenie/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img
+                    src="/Zaliczenie/facebook.png" alt="Facebook"></a>
+        </div>
+
+        <p>Created by <br> Bartosz Ambros</p>
+    </footer>
+</body>
+
+</html>

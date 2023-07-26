@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bartosz Ambros">
+    <title>Artifical Tech - Kontakt</title>
+    <link rel="stylesheet" href="../scss/base.css">
+    <link rel="stylesheet" href="../scss/kontakt.css">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="menu">
+            <nav>
+                <a href="glowna.html">Strona głowna</a>
+                <a href="newsy.html">Newsy</a>
+                <a href="onas.html">O nas</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+            <div class="jezyk">
+                <a href="contact.html"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/320px-Flag_of_the_United_States.svg.png"
+                        alt="Amerykańska Flaga" loading="lazy"></a>
+                <a href="kontakt.html"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/320px-Flag_of_Poland.svg.png"
+                        alt="Flaga Polski" loading="lazy"></a>
+            </div>
+        </div>
+        <input type="checkbox" id="hamburger-input" class="burger-shower">
+
+        <label class="hamburger-menu" for="hamburger-input">
+            <nav class="sidebar-menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="glowna.html">Strona głowna</a></li>
+                    <li><a href="newsy.html">Newsy</a></li>
+                    <li><a href="onas.html">O nas</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+                <div class="jezyk">
+                    <a href="contact.html"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/320px-Flag_of_the_United_States.svg.png"
+                            alt="Amerykańska Flaga" loading="lazy"></a>
+                    <a href="kontakt.html"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/320px-Flag_of_Poland.svg.png"
+                            alt="Flaga Polski" loading="lazy"></a>
+            </nav>
+        </label>
+
+        <div class="overlay"></div>
+
+    </header>
+
+    <section class="baner"></section>
+
+    <main>
+
+        <h2>Skontaktuj się z nami!</h2>
+
+        <form>
+            <h3>Twoje Imię: *</h3><input type="text" placeholder="Imię" required>
+            <h3>Twoje Nazwisko: *</h3><input type="text" placeholder="Nazwisko" required>
+            <div class="pole">
+                <textarea name="feedback" id="feedback" cols="100" rows="20" placeholder="Treść wiadomości" required
+                    minlength="100"></textarea>
+                <div class="guziki">
+                    <button type="submit">Wyślij</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="kontakty">
+            <div class="kontakt">
+                <h3>Dyrektor</h3>
+                <h4>Jan Kowalski</h4>
+                <p>Tel: <a href="tel:#">+48 123-456-789</a></p>
+                <p>E-mail: <a href="mailto:#">adres.email@gmail.com</a></p>
+            </div>
+            <div class="kontakt">
+                <h3>Sekretariat</h3>
+                <h4>Jan Kowalski</h4>
+                <p>Tel: <a href="tel:#">+48 123-456-789</a></p>
+                <p>E-mail: <a href="mailto:#">adres.email@gmail.com</a></p>
+            </div>
+            <div class="kontakt">
+                <h3>Dział marketingu</h3>
+                <h4>Jan Kowalski</h4>
+                <p>Tel: <a href="tel:#">+48 123-456-789</a></p>
+                <p>E-mail: <a href="mailto:#">adres.email@gmail.com</a></p>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="socials">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src="../youtube.png"
+                    alt="Youtube" loading="lazy"></a>
+            <a href="http://twitter.com/home" target="_blank" rel="noopener noreferrer"><img src="../twitter.png"
+                    alt="Twitter" loading="lazy"></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="../instagram.png"
+                    alt="Instagram" loading="lazy"></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="../facebook.png"
+                    alt="Facebook" loading="lazy"></a>
+        </div>
+
+        <p>Created by <br> Bartosz Ambros</p>
+    </footer>
+</body>
+
+</html>

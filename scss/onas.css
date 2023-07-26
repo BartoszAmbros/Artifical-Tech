@@ -1,0 +1,136 @@
+.baner {
+  width: 100%;
+  height: 15vh;
+  background-color: rgb(150, 2, 2);
+  background-image: url("../background name.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1100px) {
+  .baner {
+    background-size: 900px;
+  }
+}
+@media (max-width: 860px) {
+  .baner {
+    background-size: 850px;
+  }
+}
+@media (max-width: 750px) {
+  .baner {
+    background-size: 800px;
+  }
+}
+@media (max-width: 550px) {
+  .baner {
+    background-size: 700px;
+  }
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 15px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.history h2 {
+  font-size: 45px;
+  padding: 0 40px 10px 40px;
+  border-bottom: 4px solid red;
+}
+.history p {
+  font-size: 18px;
+  margin: 20px 30px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+main h2 {
+  margin: 20px 0;
+  font-size: 45px;
+  white-space: nowrap;
+  text-align: center;
+}
+@media (max-width: 550px) {
+  main h2 {
+    white-space: normal;
+  }
+}
+main .crew {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-top: 4px solid red;
+  width: 100%;
+}
+main .crew article {
+  display: grid;
+  grid-template-columns: 350px;
+  grid-template-rows: minmax(350px, 1fr);
+  border-left: 8px solid red;
+  gap: 10px;
+  margin-top: 15px;
+}
+main .crew article img {
+  max-width: 227px;
+  min-height: 340px;
+}
+main .crew article h3 {
+  margin-left: 10px;
+}
+main .crew article p {
+  margin: 0 10px 10px 10px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+footer .socials {
+  display: flex;
+  justify-content: space-evenly;
+  width: 400px;
+}
+footer img {
+  max-height: 50px;
+  max-width: 50px;
+  transition: 250ms;
+}
+footer img:hover {
+  border: 2px solid white;
+  border-radius: 50%;
+  scale: 130%;
+}
+footer p {
+  position: absolute;
+  right: 10px;
+  flex-shrink: 0;
+}
+@media (max-width: 700px) {
+  footer p {
+    position: static;
+  }
+}
+@media (max-width: 550px) {
+  footer img {
+    max-height: 40px;
+    max-width: 40px;
+  }
+  footer p {
+    font-size: 85%;
+  }
+}/*# sourceMappingURL=onas.css.map */

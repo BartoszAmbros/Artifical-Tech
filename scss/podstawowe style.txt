@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    font-family: Unbounded, sans-serif;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+header {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 0;
+    gap: 6%;
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    border-bottom: 3px solid red;
+
+    .logo {
+        display: flex;
+        position: relative;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 20vh;
+        height: 100%;
+        background-image: url('/Zaliczenie/logo.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        top: 0;
+        gap: 6%;
+        height: 10vh;
+        width: 100%;
+
+        nav {
+            display: flex;
+            flex-basis: 100%;
+            justify-content: space-between;
+
+            a {
+                border-bottom: 3px solid transparent;
+                padding: 0 5px 5px 5px;
+                text-decoration: 0;
+                color: white;
+                font-size: 30px;
+                transition: 250ms;
+            }
+
+            a:hover {
+                border-bottom: 3px solid white;
+            }
+        }
+
+
+    }
+
+    .jezyk {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transition: 400ms;
+        margin-right: 10px;
+
+        img {
+            max-height: 30px;
+            max-width: 30px;
+            transition: 400ms;
+        }
+
+        img:hover {
+            scale: 135%;
+            border: 1px solid white;
+        }
+
+    }
+
+    #hamburger-input {
+        visibility: hidden;
+    }
+
+
+    .hamburger-menu {
+        position: fixed;
+        visibility: hidden;
+        top: 20px;
+        right: 20px;
+        width: 45px;
+        height: 40px;
+        border: none;
+        transition: 300ms;
+        background: linear-gradient(to bottom,
+                #fff, #fff 20%,
+                transparent 20%, transparent 40%,
+                #fff 40%, #fff 60%,
+                transparent 60%, transparent 80%,
+                #fff 80%, #fff 100%);
+
+        .sidebar-menu {
+            visibility: hidden;
+            position: fixed;
+            top: 0;
+            right: -250px;
+            width: 300px;
+            height: 100%;
+            padding: 0 10px;
+            background-color: rgb(31, 31, 31);
+            transition: 300ms;
+        }
+
+        h3 {
+            color: #fff;
+            font-size: 3rem;
+            margin-left: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            list-style-type: none;
+            line-height: 4rem;
+        }
+
+        a {
+            color: #fff;
+            font-size: 1.6rem;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .35s, visibility .35s, height .35s;
+        overflow: hidden;
+        background: black;
+        z-index: -1;
+    }
+
+    #hamburger-input:checked+.hamburger-menu .sidebar-menu {
+        visibility: visible;
+        right: 0;
+    }
+
+    #hamburger-input:checked~.overlay {
+        visibility: visible;
+        opacity: 0.4;
+    }
+
+    @media(max-width: 1360px) {
+        .menu {
+
+            nav a {
+                font-size: 30px;
+            }
+        }
+    }
+
+    @media(max-width: 1100px) {
+        .menu {
+
+
+            nav a {
+                font-size: 23px;
+            }
+        }
+    }
+
+    @media(max-width: 860px) {
+
+
+        .menu {
+
+            nav,
+            .jezyk {
+                display: none;
+            }
+        }
+
+        .hamburger-menu {
+            display: inline;
+            visibility: visible;
+        }
+
+        .jezyk {
+            flex-direction: row;
+            margin: 50px 50px;
+            gap: 40px;
+
+            img {
+                max-width: 80px;
+                max-height: 80px;
+            }
+        }
+    }
+}
+.baner {
+    width: 100%;
+    height: 15vh;
+    background-color: red;
+    background-image: url(/Zaliczenie/background\ name.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1100px) {
+        background-size: 900px;
+    }
+
+    @media (max-width: 860px) {
+        background-size: 850px;
+    }
+
+    @media (max-width: 750px) {
+        background-size: 800px;
+    }
+
+    @media (max-width: 550px) {
+        background-size: 700px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+
+    .socials {
+        display: flex;
+        justify-content: space-evenly;
+        width: 400px;
+    }
+
+    img {
+        max-height: 50px;
+        max-width: 50px;
+        transition: 250ms;
+    }
+
+    img:hover {
+        border: 2px solid white;
+        border-radius: 50%;
+        scale: 130%;
+    }
+
+    p {
+        position: absolute;
+        right: 10px;
+        flex-shrink: 0;
+    }
+
+    @media(max-width: 700px) {
+
+        p {
+            position: static;
+        }
+    }
+    @media (max-width: 550px) {
+        img {
+            max-height: 40px;
+            max-width: 40px;
+        }
+
+        p {
+            font-size: 85%;
+        }
+
+    }
+}

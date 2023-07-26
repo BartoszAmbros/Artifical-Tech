@@ -1,0 +1,164 @@
+.baner {
+  width: 100%;
+  height: 15vh;
+  background-color: rgb(150, 2, 2);
+  background-image: url("../background name.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1100px) {
+  .baner {
+    background-size: 900px;
+  }
+}
+@media (max-width: 860px) {
+  .baner {
+    background-size: 850px;
+  }
+}
+@media (max-width: 750px) {
+  .baner {
+    background-size: 800px;
+  }
+}
+@media (max-width: 550px) {
+  .baner {
+    background-size: 700px;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 25px;
+  margin: 50px 0;
+}
+main h2 {
+  padding: 0 23% 30px 23%;
+  font-size: 40px;
+  border-bottom: 8px solid red;
+  transition: 200ms;
+}
+main h3 {
+  font-size: 25px;
+  padding-top: 20px;
+}
+main article {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  border: 5px solid red;
+  transition: 200ms;
+}
+main article img {
+  width: 350px;
+  border-right: 5px solid red;
+  transition: 200ms;
+}
+main article p {
+  margin: 0 30px;
+  transition: 200ms;
+}
+@media (max-width: 1100px) {
+  main h2 {
+    padding: 0 15% 30px 15%;
+  }
+  main article img {
+    width: 250px;
+  }
+  main article p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 860px) {
+  main h2 {
+    padding: 0 10% 30px 10%;
+  }
+  main article img {
+    width: 200px;
+  }
+  main article p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 750px) {
+  main {
+    margin: 50px 0;
+  }
+  main h2 {
+    font-size: 35px;
+    padding: 0 20px 30px 20px;
+  }
+  main h3 {
+    font-size: 25px;
+  }
+  main article {
+    flex-direction: column;
+  }
+  main article img {
+    width: 100%;
+    border-right: none;
+    border-bottom: 5px solid red;
+  }
+  main article p {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 550px) {
+  main h2 {
+    font-size: 27px;
+    padding: 0 5px 20px 5px;
+  }
+  main article p {
+    font-size: 15px;
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+footer .socials {
+  display: flex;
+  justify-content: space-evenly;
+  width: 400px;
+}
+footer img {
+  max-height: 50px;
+  max-width: 50px;
+  transition: 250ms;
+}
+footer img:hover {
+  border: 2px solid white;
+  border-radius: 50%;
+  scale: 130%;
+}
+footer p {
+  position: absolute;
+  right: 10px;
+  flex-shrink: 0;
+}
+@media (max-width: 700px) {
+  footer p {
+    position: static;
+  }
+}
+@media (max-width: 550px) {
+  footer img {
+    max-height: 40px;
+    max-width: 40px;
+  }
+  footer p {
+    font-size: 85%;
+  }
+}/*# sourceMappingURL=newsy.css.map */
